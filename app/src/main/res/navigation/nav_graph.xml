@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="me.chozzle.reproducebug.ui.main.HomeFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_pager_page" >
+        <action
+            android:id="@+id/action_placeholderFragment_to_goBackFragment"
+            app:destination="@id/goBackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goBackFragment"
+        android:name="me.chozzle.reproducebug.ui.main.GoBackFragment"
+        android:label="GoBackFragment" />
+</navigation>
